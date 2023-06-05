@@ -15,11 +15,11 @@ function mostrarContenidosUrlActual(){
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.UNSENT) {
-            estadoActualUrl.textContent = ' No iniciada';
+            estadoActualUrl.innerHTML = '<p><b>Estado:</b> No iniciada</p>';
         } else if (xhr.readyState === XMLHttpRequest.LOADING) {
-            estadoActualUrl.textContent = 'Estado: Cargando...';
+            estadoActualUrl.innerHTML = '<p><b>Estado:</b> Cargando...</p>';
         } else if (xhr.readyState === XMLHttpRequest.DONE) {
-            estadoActualUrl.textContent = 'Estado: Completada';
+            estadoActualUrl.innerHTML = '<p><b>Estado:</b>Completada!</p>';
 
             let headers = xhr.getAllResponseHeaders();
             let codigoEstado = xhr.status;
@@ -50,16 +50,16 @@ function mostrarContenidosUrlIngresada(){
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.UNSENT) {
-          estadoActualUrlIngresada.textContent = 'No iniciada';
+          estadoActualUrlIngresada.innerHTML = '<p><b>Estado:</b> No iniciada</p>';
         } else if (xhr.readyState === XMLHttpRequest.LOADING) {
-          estadoActualUrlIngresada.textContent = 'Estado: Cargando...';
+          estadoActualUrlIngresada.innerHTML = '<p><b>Estado:</b> Cargando...</p>';
         } else if (xhr.readyState === XMLHttpRequest.DONE) {
-          estadoActualUrlIngresada.textContent = 'Estado: Completada';
+          estadoActualUrlIngresada.innerHTML = '<p><b>Estado:</b>Completada!</p>';
 
           let headers = xhr.getAllResponseHeaders();
           let codigoEstado = xhr.status;
   
-          resultadoDiv.innerHTML =  `<p><b>Código de Estado: </b>${headers} </p>`;
+          resultadoDiv.innerHTML =  `<p><b>Respuesta del servidor: </b>${headers} </p>`;
           codigoEstadoUrlIngresada.innerHTML =  `<p><b>Código de Estado: </b>${codigoEstado} </p>`;
     }
   };
