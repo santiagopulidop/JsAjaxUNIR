@@ -8,8 +8,15 @@
 <body>
   <main>  
     <section id="javascript">
-      <h2>Ejercicios Javascript</h2>
-      <div class="palindroma">
+      <h2>Ejercicios Javascript - AJAX</h2>
+      <ul id="menu">
+        <a href="#ejercicio1"><li>Verificador de Palíndromos</li></a>
+        <a href="#ejercicio2"><li>Calcular el mayor de 2 números</li></a>
+        <a href="#ejercicio3"><li>Vocales en una palabra</li></a>
+        <a href="#ejercicio4"><li>Contador de vocales</li></a>
+        <a href="#ajax"><li>Ejercicios AJAX</li></a>
+      </ul>
+      <div class="palindroma" id="ejercicio1">
         <h2>Verificador de Palíndromos</h2>
           <label for="inputText">Ingresa una palabra:</label>
           <input type="text" id="inputText">
@@ -19,7 +26,7 @@
           <label id="resultLabel"></label>
           <script src="JS/ejercicio1.js" ></script>
       </div>
-      <div class="mayor-que">
+      <div class="mayor-que" id="ejercicio2">
         <h2>Programa que calcula cúal numero es mayor</h2>
         <div class="input-container">
           <label for="number1">Número 1:</label>
@@ -36,7 +43,7 @@
         <script src="JS/ejercicio2.js" ></script>
       </div>
     
-      <div class="vocales-palabra">
+      <div class="vocales-palabra" id="ejercicio3">
         <h2>Vocales en una palabra</h2>
         <input type="text" id="input-palabra" placeholder="Ingresa una palabra">
         <br>
@@ -45,7 +52,7 @@
         <script src="JS/ejercicio3.js" ></script>
       </div>
       
-      <div class="contador-vocales">
+      <div class="contador-vocales" id="ejercicio4">
         <h2>Contador de vocales</h2>
         <div class="input-container">
           <input type="text" id="frase-contador" placeholder="Ingrese una frase">

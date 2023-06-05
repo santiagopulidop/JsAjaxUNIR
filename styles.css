@@ -5,17 +5,44 @@
     }
   
 #javascript{
-  margin: 100px auto;
+  margin: 60px auto;
   border: 1px solid gray;
   width: 80%;
   text-align: center;
 }
- 
- .palindroma {
+
+#menu {  
+	list-style:none;
+	width: 40%;
+	margin:50px auto;
+}
+
+#menu li {
+	margin:8px;
+	padding:8px;
+	border:1px solid black;
+	border-radius: 10px;
+	text-align:center;
+	font-size:15px;
+	color: #000;
+	background-color:#D7DBDD;
+	}
+
+#menu a li:hover {
+	color:black;
+	background-color:#F8F9F9;
+}
+
+#menu a {
+  text-decoration: none;
+}
+
+.palindroma {
   width: 80%;
   margin: 60px auto;
   border-bottom: 1px dotted gray;
-  padding-bottom: 50px ;
+  border-top: 1px dotted gray;
+  padding: 50px 0;
 }
   
 .palindroma  h1{
@@ -73,20 +100,16 @@ input {
   width: 80%;
   margin: 20px auto;
   border-bottom: 1px dotted gray;
+  padding-bottom: 50px;
 }
 
 .contador-vocales{
   margin-top: 50px;
+  padding-bottom: 50px;
 }
 
-
-
-
-
-
-
 #ajax{
-  margin: 100px auto;
+  margin: 10px auto;
   border: 1px solid gray;
   width: 80%;
   text-align: center;
