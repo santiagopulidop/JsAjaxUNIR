@@ -1,0 +1,117 @@
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+  
+#javascript{
+  margin: 100px auto;
+  border: 1px solid gray;
+  width: 80%;
+  text-align: center;
+}
+ 
+ .palindroma {
+  width: 80%;
+  margin: 60px auto;
+  border-bottom: 1px dotted gray;
+  padding-bottom: 50px ;
+}
+  
+.palindroma  h1{
+  color: #333;
+} 
+
+.palindroma  label {
+    display: block;
+    margin-top: 20px;
+  }
+  
+input {
+    padding: 5px;
+    margin: 10px;
+    width: 200px;
+  }
+   
+.palindroma  #resultLabel {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+.mayor-que {
+  width: 80%;
+  margin: 60px auto;
+  border-bottom: 1px dotted gray;
+  padding-bottom: 50px ;
+  
+}  
+.mayor-que label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mayor-que #result-container {
+    margin-top: 20px;
+}
+
+.mayor-que #result {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.boton-verificar{
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.vocales-palabra{
+  width: 80%;
+  margin: 20px auto;
+  border-bottom: 1px dotted gray;
+}
+
+.contador-vocales{
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+#ajax{
+  margin: 100px auto;
+  border: 1px solid gray;
+  width: 80%;
+  text-align: center;
+}
+
+#ajax input{
+  font-style: italic;
+  margin: 15px 0;
+}
+
+#ajax p {
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+
+
+#url-ingresada{
+  border-top: 1px solid gray;
+  padding-top: 50px;
+}
+  
+footer{
+  text-align: center;
+}
+footer p{
+  padding: 15px;
+}

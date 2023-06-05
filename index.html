@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <main>  
+    <section id="javascript">
+      <h2>Ejercicios Javascript</h2>
+      <div class="palindroma">
+        <h2>Verificador de Palíndromos</h2>
+          <label for="inputText">Ingresa una palabra:</label>
+          <input type="text" id="inputText">
+          <br>
+          <button id="verificar-palindroma" class="boton-verificar" onclick="checkPalindrome()">Verificar</button>
+          <br>
+          <label id="resultLabel"></label>
+          <script src="JS/ejercicio1.js" ></script>
+      </div>
+      <div class="mayor-que">
+        <h2>Programa que calcula cúal numero es mayor</h2>
+        <div class="input-container">
+          <label for="number1">Número 1:</label>
+          <input type="number" id="number1">
+          <br>
+          <label for="number2">Número 2:</label>
+          <input type="number" id="number2">
+          <br>
+          <button id="comparar" class="boton-verificar" onclick="compareNumbers()">Comparar</button>
+        </div>
+        <div id="result-container">
+            <p id="result"></p>
+        </div>
+        <script src="JS/ejercicio2.js" ></script>
+      </div>
+    
+      <div class="vocales-palabra">
+        <h2>Vocales en una palabra</h2>
+        <input type="text" id="input-palabra" placeholder="Ingresa una palabra">
+        <br>
+        <button id="encontrar-vocales" class="boton-verificar" onclick="mostrarVocales()">Mostrar Vocales</button>
+        <p id="vocales-encontradas"></p>
+        <script src="JS/ejercicio3.js" ></script>
+      </div>
+      
+      <div class="contador-vocales">
+        <h2>Contador de vocales</h2>
+        <div class="input-container">
+          <input type="text" id="frase-contador" placeholder="Ingrese una frase">
+          <br>
+          <button id="contar-vocales" onclick="contarVocales()" class="boton-verificar">Contar vocales</button>
+      </div>
+      <div id="result-container-contador">
+          <p id="a-count"></p>
+          <p id="e-count"></p>
+          <p id="i-count"></p>
+          <p id="o-count"></p>
+          <p id="u-count"></p>
+      </div>
+      </div>
+      <script src="JS/ejercicio4.js" ></script>
+    </section>
+    
+    <section id="ajax">
+      <h2>Ejercicios AJAX</h2>
+      <div class="pagina-actual">
+        <h3>URL de la página actual: <h3>
+        <input id="url-actual"></input>
+        <br>
+        <button onclick="mostrarContenidosUrlActual()">Mostrar Contenidos</button>
+        
+        <div id="resultados-url-actual">
+          <h3>Estado de la Peticion: </h3>
+          <p id="estado-peticion-actual"><b>Estado</b>: No iniciada</p>
+          <h3>Cabeceras HTTP de la respuesta del servidor:</h3>
+          <div id="headers-url-actual">
+            <p><b>Respuesta del servidor: </b>---</p>
+          </div>
+          <h3>Códigos de estado:</h3>
+          <div id="codigo-estado-url-actual">
+            <p><b>Estado: </b>---</p>
+          </div>
+        </div>
+      </div>
+      
+      <div id="url-ingresada">
+        <h3>Ingrese URL:</h3>
+        <input type="text" id="input-url-ingresada">
+        <br>
+        <button id="boton-url-ingresada" onclick="mostrarContenidosUrlIngresada()">Mostrar contenidos</button>
+        <br>
+        <div id="resultados-url-ingresada">
+          <h3>Estado de la Peticion: </h3>
+          <p id="estado-peticion-url-ingresada"><b>Estado</b>: No iniciada</p>
+          <h3>Cabeceras HTTP de la respuesta del servidor:</h3>
+          <div id="headers-url-ingresada">
+            <p><b>Respuesta del servidor: </b>---</p>
+          </div>
+          <h3>Códigos de estado:</h3>
+          <div id="codigo-estado-url-ingresada">
+            <p><b>Estado: </b>---</p>
+          </div>
+        </div>
+
+      </div>
+    <script src="JS/ajax.js"></script>   
+    </section>
+    
+    <footer>
+      <div>
+        <p>&copy; Santiago Pulido Peláez - UNIR 2023</p>
+      </div>
+    </footer>
+    
+    
+  </main>
+</body>
+</html>
